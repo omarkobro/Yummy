@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Yummy</title>
+</head>
+<body class="bg-black">
+
+    <div class="searchContainer d-flex text-center justify-content-center mt-5 d-none">
+
+    </div>
+    <div class="container py-5">
+        <div id="myRow" class="row g-4 justify-content-center">
+        </div>
+    </div>
+    <div onfocus="" class="nav-container d-flex ">
+        <div class="nav-body ps-3 d-flex flex-column justify-content-between text-white bg-black">
+            <div class="navigation-links">
+                <ul class="list-unstyled mt-lg-5">
+                    <li onclick="displaySearch()" id="search" class="fs-3 my-3 ps-3 cursor">Search</li>
+                    <li onclick="getCategories()" id="categories" class="fs-3 my-3 ps-3 cursor">Categories</li>
+                    <li onclick="getArea()" id="area" class="fs-3 my-3 ps-3 cursor">Area</li>
+                    <li onclick="getIngredients()" id="ingredients" class="fs-3 my-3 ps-3 cursor">Ingredients</li>
+                    <li onclick="displayContact()" id="contactUs" class="fs-3 my-3 ps-3 cursor">Contact Us</li>
+                </ul>
+            </div>
+            <div class="nav-end fs-5">
+                <div class="social-links">
+                    <i class="fa-brands fa-facebook cursor"></i>
+                    <i class="fa-brands fa-twitter cursor"></i>
+                    <i class="fa-solid fa-globe cursor"></i>
+                </div>
+                <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+            </div>
+        </div>
+        <div class="nav-head bg-white d-flex flex-column justify-content-between">
+            <img id="img" class="mt-4 " src="Img/logo.png" alt="">
+            <span id="openBtn" class="text-center"><i class="fa-solid fa-bars-staggered fs-1 cursor openBtn"></i></span>
+            <span id="closeBtn" class="text-center" ><i class="fa-solid fa-x fs-1 cursor closeBtn"></i></span>
+            <div class="nav-head-icons d-flex flex-column mb-5">
+                <i class="fa-solid fa-globe py-2 cursor"></i>
+                <i class="fa-solid fa-share-nodes py-2 cursor"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="loading-screen position-fixed top-0 start-0 end-0 bottom-0 bg-black justify-content-center align-items-center">
+        <i class="fa fa-spinner fa-spin fa-5x"></i>
+    </div>
+        
+<div>
+        <script src="Js/code.jquery.com_jquery-3.7.0.min.js"></script>
+        <script src="Js/all.min.js"></script>
+        <script src="Js/bootstrap.bundle.min.js"></script>
+        <script src="Js/main.js"></script>
+</div>
+</body>
+</html>
