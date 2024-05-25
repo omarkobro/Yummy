@@ -70,12 +70,12 @@ function displayHomeMeals(arr){
 
 // Start Search Section
 async function searchByName(mealName){
-    let response = await fetch(`http://www.themealdb.com/api/json/v1/1/search.php?s=${mealName}`)
+    let response = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${mealName}`)
     response = await response.json()
     displayHomeMeals(response.meals)
 }
 async function searchByletter(letter){
-    let response = await fetch(`http://www.themealdb.com/api/json/v1/1/search.php?s=${letter}`)
+    let response = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${letter}`)
     response = await response.json()
     displayHomeMeals(response.meals)
 }
